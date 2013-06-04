@@ -1,0 +1,3 @@
+[submodule "server/cryptojs"]
+	path = server/cryptojs
+	url = git://github.com/cwacek/cryptojs.git
