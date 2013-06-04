@@ -13,7 +13,8 @@ To run the server implementation using Node.js, several packages
 are required.
 
 ```
-npm install optimist wordwrap bigint-node
+git submodule update  # To get cryptojs
+npm install optimist wordwrap bigint-node wordwrap read wrap
 ```
 
 ### Via Google Spreadsheets
