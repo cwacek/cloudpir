@@ -36,19 +36,6 @@ class TestDbProvider extends util.DbProvider
     return bigint.ParseFromString(@_db[i],2,2)
 
 class LargeTestDbProvider extends TestDbProvider
-  old_db: [
-     "            my name is fred                                     ",
-     "                    his name is james                           ",
-     "alfred once knew                                          his ti",
-     "v000000000000000000000000000000000000000000000000000000000000000",
-     "1900000000000000000000000000000000000000000000000000000000000000",
-     "1j00000000000000000000000000000000000000000000000000000000000000",
-     "1t00000000000000000000000000000000000000000000000000000000000000",
-     "2700000000000000000000000000000000000000000000000000000000000000",
-     "2h00000000000000000000000000000000000000000000000000000000000000",
-     "2r00000000000000000000000000000000000000000000000000000000000000"
-  ]
-
   _db: [
     "3780a7e0aa0f28c74655254c5c2d54347c31fd9fa0781fb09b387bd03558d0363d2cc1da",
     "c148b8f74dac0c985671ac96e7b4b0ba5e7b961253d588cfcf01cca3a8c9c74ee4bdeb4628e3c7e977c253e93bdf1a",
@@ -170,7 +157,6 @@ for row,i in computed
   console.log(wrap("Row #{i} [#{row.length} elements]: #{util.inspectArray(row)}"))
 
 encoded = pir.PirInstance.encodeResponse(computed)
-#console.log(wrap("Encoded (#{encoded.length} bytes): #{encoded}"))
 
 fs.writeFile "answer.dat", encoded, (err) ->
   if err
