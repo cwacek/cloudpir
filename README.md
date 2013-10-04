@@ -14,18 +14,23 @@ Use
 ----
 To run the PIR implementation against a local server:
 
+First you need to install the dependencies for node. Follow
+the instructions in [server/README.md](server/README.md).
+
+Then:
+
 ```
-cd client
-bundle install
-ruby pir.rb -e 2 -p 50-8
+$ cd client
+$ bundle install
+$ ruby pir.rb -e 2 -p 50-8
 ```
 
 To run the implementation against Google Docs:
 
 ```
-cd client
-bundle install
-ruby pir.rb -e 2 -p 50-8 -g
+$ cd client
+$ bundle install
+$ ruby pir.rb -e 2 -p 50-8 -g
 ```
 
 For help try `ruby pir.rb --help`
